@@ -47,7 +47,7 @@ Every lineup is scored in win-probability terms, so the output is "how many wins
 
 An honest caveat, stated plainly: WPA over a single season is noisy, and its leverage component is largely non-repeatable. So this ranks decision **outcomes**, not proven manager skill. The model shows which dugouts systematically leave value on the table and which specific bats are being benched into worse matchups, both in theory (the projected gap) and in realized results.
 
-A sample of the real output is in [`sample_output/`](sample_output/): the scored decision log and the per-game lineup gaps.
+The published charts are in [`charts/`](charts/), including the divergence scatter (how often each manager departs from the model, and whether those departures added wins), the best-vs-worst dugout gap over the season, and the player-level value chart. A sample of the raw output is in [`sample_output/`](sample_output/): the scored decision log and the per-game lineup gaps.
 
 ---
 
@@ -63,6 +63,7 @@ src/
                        season using only data available at the time, and produces
                        the scored decision and season logs. This is the complete,
                        bullpen-aware pipeline that generated the published results.
+charts/                The published charts from the writeup.
 sample_output/         A sample of the generated decision and season logs.
 ```
 
